@@ -1,0 +1,24 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amjedidiah/dsa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amjedidiah/dsa/issues"
+  },
+  "homepage": "https://github.com/amjedidiah/dsa#readme",
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^2.0.19"
+  }
+}
