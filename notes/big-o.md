@@ -16,13 +16,22 @@
 
 ## Big O Notations
 
-### O(n) - Linear Time - fair
-
-Plotting a graph of `operations` against `elements` results in a linear graph, meaning as more elements are added, the number of operations increases, resulting in `O(n)`.
-
 ### O(1) - Constant Time - excellent
 
 Plotting a graph of `operations` against `elements` results in a constant graph, meaning as more elements are added, the number of operations remains the same, whether 1 or 100, resulting in `O(1)`.
+
+### O(log n) - Logarithmic Time - good
+
+For each level of a Perfect Binary Tree, the number of nodes is 2^level - 1, where level>= 1
+therefore, n = 2^h - 1;
+: n = 2^h ... 1 is insignificant
+: Log n = h ... to base 2
+
+Resulting to O(log n). This is `divide and conquer`
+
+### O(n) - Linear Time - fair
+
+Plotting a graph of `operations` against `elements` results in a linear graph, meaning as more elements are added, the number of operations increases, resulting in `O(n)`.
 
 ### O(n^2) - Quadratic Time - horrible
 

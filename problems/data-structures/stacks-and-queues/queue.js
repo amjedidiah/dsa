@@ -41,19 +41,21 @@ class Queue {
    * @return {this}
    */
   enqueue(value) {
-    if (value) {
-      const newNode = new Node(value);
-
-      if (this.length === 0) {
-        this.first = newNode;
-      } else {
-        this.last.next = newNode;
-      }
-
-      this.last = newNode;
-
-      this.length++;
+    if (!value) {
+      return 'Enqueue requires a value';
     }
+
+    const newNode = new Node(value);
+
+    if (this.length === 0) {
+      this.first = newNode;
+    } else {
+      this.last.next = newNode;
+    }
+
+    this.last = newNode;
+
+    this.length++;
     return this;
   }
 

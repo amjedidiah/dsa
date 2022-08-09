@@ -24,9 +24,10 @@ class Stack {
    * @return {this}
    */
   push(value) {
-    if (value) {
-      this.list.push(value);
+    if (!value) {
+      return 'Push requires a value';
     }
+    this.list.push(value);
 
     return this;
   }

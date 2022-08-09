@@ -42,14 +42,15 @@ class Stack {
    * @return {this}
    */
   push(value) {
-    if (value) {
-      const newNode = new Node(value, this.top);
-      this.top = newNode;
-      if (this.length === 0) {
-        this.bottom = newNode;
-      }
-      this.length++;
+    if (!value) {
+      return 'Push requires a value';
     }
+    const newNode = new Node(value, this.top);
+    this.top = newNode;
+    if (this.length === 0) {
+      this.bottom = newNode;
+    }
+    this.length++;
 
     return this;
   }

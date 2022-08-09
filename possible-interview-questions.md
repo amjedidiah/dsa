@@ -14,3 +14,6 @@
    - Disadvantage of multi-threaded programming: _deadlock_
 
 7. Benefits of using either linked list or array for stacks
+8. Why is BST better than Hash Table?
+
+- BST preserves relationships
