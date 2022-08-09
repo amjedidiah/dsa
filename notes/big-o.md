@@ -33,7 +33,7 @@ Resulting to O(log n). This is `divide and conquer`
 
 Plotting a graph of `operations` against `elements` results in a linear graph, meaning as more elements are added, the number of operations increases, resulting in `O(n)`.
 
-### O(n^2) - Quadratic Time - horrible
+### O(n^2) - Quadratic Time - poor
 
 Plotting a graph of `operations` against `elements` results in a quadratic graph, meaning as more elements are added, the number of operations equals the sqaure of the elements, resulting in `O(n^2)`.
 
@@ -43,6 +43,10 @@ const pairs = [1, 2, 3, 4, 5];
 
 pairs.forEach((pair) => pairs.forEach((pair2) => console.log(pair, pair2)));
 ```
+
+### O(2^n) - Exponential Time - horrible
+
+Plotting a graph of `operations` against `elements` results in an exponential graph, meaning as more elements are added, the number of operations increases exponentially, resulting in `O(2^n)`. This is common in algorithms that are based on recursion.
 
 ### O(n!) - Factorial Time / Oh no! - terrible
 
