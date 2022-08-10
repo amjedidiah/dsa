@@ -33,6 +33,8 @@ Resulting to O(log n). This is `divide and conquer`
 
 Plotting a graph of `operations` against `elements` results in a linear graph, meaning as more elements are added, the number of operations increases, resulting in `O(n)`.
 
+### O(n log n) - Logarithmic Time - fair
+
 ### O(n^2) - Quadratic Time - poor
 
 Plotting a graph of `operations` against `elements` results in a quadratic graph, meaning as more elements are added, the number of operations equals the sqaure of the elements, resulting in `O(n^2)`.

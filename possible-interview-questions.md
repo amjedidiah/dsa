@@ -16,4 +16,7 @@
 7. Benefits of using either linked list or array for stacks
 8. Why is BST better than Hash Table?
 
-- BST preserves relationships
+   - BST preserves relationships
+
+9. What is stability in sorting algorithms and why is it important?
+   - [Answer](https://stackoverflow.com/questions/1517793/what-is-stability-in-sorting-algorithms-and-why-is-it-important)

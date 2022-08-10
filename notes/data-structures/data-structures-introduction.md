@@ -24,3 +24,7 @@ Data Structures + Algorithms = Programs
 - Searching: find the location of a dat item, if it exists
 - Sorting
 - Access
+
+## Resources
+
+- [ ] [VisualGo](https://visualgo.net/)

@@ -1,13 +1,31 @@
 # ToDo
 
-[ ] Finish reading up [Computer Memory](/resources//data-structures/7.4%20Computer%20Memory.pdf)
+## Coding Tasks
 
 [ ] Update collision in [Hash tbale](/problems/data-structures/hash-tables/create-a-hash-table.js) to be linked list instead of array
+
+[ ] Complete Quick Sort Algorithm [here](/problems/algorithms/sorting/quick-sort.js)
+
+## Misc
 
 [ ] Make a list of Data structure methods and their Big O notations
 
 [ ] Post certificate of completion in **_#alumni_** channel
 
+[ ] Finish reading up [Computer Memory](/resources//data-structures/7.4%20Computer%20Memory.pdf)
+
 [ ] Look Into [big o cheatsheet](/big-o/big-o-cheatsheet.pdf) to know and remember Big O notations for Data structure methods.
+
+[ ] [Heap Sort](https://brilliant.org/wiki/heap-sort/)
+
+[ ] [Heap Sort vs. Quick Sort](https://stackoverflow.com/questions/2467751/quicksort-vs-heapsort)
+
+[ ] [Radix Sort](https://brilliant.org/wiki/radix-sort/)
+
+[ ] [Radix Sort Animation](https://www.cs.usfca.edu/~galles/visualization/RadixSort.html)
+
+[ ] [Counting Sort](https://brilliant.org/wiki/counting-sort/)
+
+[ ] [Counting Sort Animation](https://www.cs.usfca.edu/~galles/visualization/CountingSort.html)
 
 [ ] Take up and do the thing @Blossom Babalola is doing on LinkedIn, on both LinkedIn and Twitter.
