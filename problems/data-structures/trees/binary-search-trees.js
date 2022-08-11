@@ -121,9 +121,9 @@ class BinarySearchTree {
     if (found) {
       if (!currentNode.right) {
         if (currentNode.left) {
-          return currentNode = currentNode.left;
+          return (currentNode = currentNode.left);
         } else {
-          return currentNode = null;
+          return (currentNode = null);
         }
       }
       currentNode.value = this.traverse(currentNode.right);
@@ -150,29 +150,117 @@ class BinarySearchTree {
 
     return value;
   }
-}
 
-const tree = new BinarySearchTree();
-tree.insert(9);
-tree.insert(4);
-tree.insert(6);
-tree.insert(20);
-tree.insert(4);
-tree.insert(170);
-tree.insert(15);
-tree.insert(1);
-// tree.remove(15);
-// tree.remove(20);
-// tree.remove(170);
-tree.remove(20);
-tree.remove(1);
-tree.remove(6);
-console.log(JSON.stringify(traverse(tree.root)));
-/**
- *        9
- *   4          20
- * 1   6     15    170
- */
+  /**
+   * Breadth first search
+   * @return {array}
+   */
+  bfs() {
+    if (!this.root) {
+      return [];
+    }
+
+    if (!(this.root.left || this.root.right)) {
+      return [this.root.value];
+    }
+
+    const list = [];
+    const queue = [this.root];
+
+    while (queue.length) {
+      const currentNode = queue.shift();
+      list.push(currentNode.value);
+
+      if (currentNode.left) {
+        queue.push(currentNode.left);
+      }
+
+      if (currentNode.right) {
+        queue.push(currentNode.right);
+      }
+    }
+
+    return list;
+  }
+
+  /**
+   * Bfs recursive
+   * @return {array}
+   */
+  bfsRecursive() {
+    const recurse = (queue) => {
+      if (!queue.length) {
+        return [];
+      }
+
+      const currentNode = queue.shift();
+      if (currentNode.left) {
+        queue.push(currentNode.left);
+      }
+      if (currentNode.right) {
+        queue.push(currentNode.right);
+      }
+
+      return [currentNode.value].concat(recurse(queue));
+    };
+
+    return recurse([this.root]);
+  }
+
+  /**
+   * Dfs recursive - inorder
+   * @return {array}
+   */
+  dfsInOrder() {
+    const recurse = (currentNode) => {
+      if (!currentNode) {
+        return [];
+      }
+
+      return recurse(currentNode.left)
+          .concat([currentNode.value])
+          .concat(recurse(currentNode.right));
+    };
+
+    return recurse(this.root);
+  }
+
+  /**
+   * Dfs recursive - preorder
+   * @return {array}
+   */
+  dfsPreOrder() {
+    const recurse = (currentNode) => {
+      if (!currentNode) {
+        return [];
+      }
+
+      return [currentNode.value]
+          .concat(recurse(currentNode.left))
+          .concat(recurse(currentNode.right));
+    };
+
+    return recurse(this.root);
+  }
+
+  /**
+   * Dfs recursive - postorder
+   * @return {array}
+   */
+  dfsPostOrder() {
+    const recurse = (currentNode) => {
+      if (!currentNode) {
+        return [];
+      }
+
+      return recurse(currentNode.left)
+          .concat(recurse(currentNode.right))
+          .concat([currentNode.value]);
+    };
+
+    return recurse(this.root);
+  }
+}
 
 /**
  * Travserses a node
@@ -185,3 +273,36 @@ function traverse(node) {
   tree.right = node.right === null ? null : traverse(node.right);
   return tree;
 }
+
+const tree = new BinarySearchTree();
+tree.insert(9);
+tree.insert(4);
+tree.insert(6);
+tree.insert(20);
+tree.insert(4);
+tree.insert(170);
+tree.insert(15);
+tree.insert(1);
+tree.insert(150);
+tree.insert(8);
+tree.insert(7);
+tree.insert(17);
+// tree.remove(15);
+// tree.remove(20);
+// tree.remove(170);
+// tree.remove(20);
+// tree.remove(1);
+// tree.remove(6);
+console.log(JSON.stringify(traverse(tree.root)));
+tree.bfsRecursive();
+console.log(tree.dfsInOrder());
+console.log(tree.dfsPreOrder());
+console.log(tree.dfsPostOrder());
+/**
+ *        9
+ *   4          20
+ * 1   6     15    170
+ */
+// DFS: InOrder - [1,4,6,9,15,20,170]
+// DFS: PreOrder - [9,4,1,6,20,15,170] : useful for rebuilding the tree back up
+// DFS: PostOrder - [1,6,4,15,170,20,9]

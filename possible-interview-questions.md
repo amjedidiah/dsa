@@ -19,4 +19,13 @@
    - BST preserves relationships
 
 9. What is stability in sorting algorithms and why is it important?
+
    - [Answer](https://stackoverflow.com/questions/1517793/what-is-stability-in-sorting-algorithms-and-why-is-it-important)
+
+10. What algorithm is best to use to sort an array?
+
+- If it is sorted, divide and conquer with _Binary Search_ which has time complexity of `O(log n)`.
+- If it is not sorted:
+  - If yes, same as above
+  - If no, then _Linear Search_: `O(n)`
+- If it's made up of text, see if the Trie data structure will help
