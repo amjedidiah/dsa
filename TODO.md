@@ -6,6 +6,16 @@
 
 [ ] Complete Quick Sort Algorithm [here](/problems/algorithms/sorting/quick-sort.js)
 
+## [Non technical Interview](/notes/non-tecnical-interview.md)
+
+[ ] Check _#job-hunting_ Discord Channel and .MD note for an idea of _Hero stories_ and come up with mine
+
+[ ] Check _#job-hunting_ Discord Channel and .MD note for an idea of _1-minute pitch_ and come up with mine, record it in a video as well.
+
+[ ] Check _#job-hunting_ Discord Channel and .MD note for an idea of _Past Projects_ question and come up with mine.
+
+[ ] Check _#job-hunting_ Discord Channel and .MD note for an idea of _Your Biggest Weakness_ question and come up with mine
+
 ## Misc
 
 [ ] Make a list of Data structure methods and their Big O notations
