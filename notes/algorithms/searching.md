@@ -78,3 +78,5 @@
 ## Resources
 
 - [ ] [Space & Time Complexity of DFS & BFS](https://stackoverflow.com/questions/9844193/what-is-the-time-and-space-complexity-of-a-breadth-first-and-depth-first-tree-tr)
+
+- [ ] [Finding The Shortest Path With A Little Help From Dijkstra](https://medium.com/basecs/finding-the-shortest-path-with-a-little-help-from-dijkstra-613149fbdc8e)
