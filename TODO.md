@@ -6,6 +6,10 @@
 
 [ ] Complete Quick Sort Algorithm [here](/problems/algorithms/sorting/quick-sort.js)
 
+[ ] Solve Coding CHallenges In Section 19 of DSA course
+
+[ ] Solve Past Coding Challenges [here](https://zerotomastery.io/community/?utm_source=udemy&utm_medium=coursecontent)
+
 ## [Non technical Interview](/notes/non-tecnical-interview.md)
 
 [ ] Check _#job-hunting_ Discord Channel and .MD note for an idea of _Hero stories_ and come up with mine
@@ -17,6 +21,8 @@
 [ ] Check _#job-hunting_ Discord Channel and .MD note for an idea of _Your Biggest Weakness_ question and come up with mine
 
 ## Misc
+
+[ ] Pick A ZTM open source project and start contributing to it
 
 [ ] Make a list of Data structure methods and their Big O notations
 
